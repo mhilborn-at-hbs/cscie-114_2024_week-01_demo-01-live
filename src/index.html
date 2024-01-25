@@ -1,0 +1,39 @@
+---
+title: 'Hello, CSCI E-114!'
+layout: 'layouts/base.html'
+---
+
+<header>
+    <h1>Hello, CSCI E-114!</h1>
+</header>
+
+<main>
+    <h2>My name is [insert your name here].</h2>
+
+    <section id="funFacts">
+        <h3>Two fun facts about myself are:</h3>
+        
+        <ul>
+            <li>[Insert your first fun fact here.]</li>
+            <li>[Insert your second fun fact here.]</li>
+        </ul>
+    </section>
+    <section id="myMovie">
+        <h3>Here's some information about one of my favorite movies:</h3>
+        
+        <ul>
+            <li><strong>Title:</strong> {{ movie.Title }} </li>
+            <li><strong>Plot:</strong> {{movie.Plot }}</li>
+            <li><strong>Director:</strong> {{ movie.Director }}</li>
+            <li><strong>Year:</strong> {{ movie.Year }}</li>
+        </ul>
+        <div id="myMoviePoster">
+            <img src="{{ movie.Poster }}" alt="{{ movie.Title }}" />
+        </div>
+    </section>
+</main>
+
+<footer>
+    This web page is my submission for the first assignment of "CSCI E-114: Web Application Development With Jamstack." 
+</footer>
+
